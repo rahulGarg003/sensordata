@@ -10,15 +10,16 @@ $conn = new mysqli("$servername", $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-echo "Connected successfully";
+//echo "Connected successfully";
 echo"Yes";
 $sql = "SELECT * FROM sensor";
     $result = mysqli_query($conn ,$sql);
     $array = [];
-    
+    echo "<table><tr><th>Time</th><th>Ammonia Level</th><th>Water Level</th><th>Location</th></tr> ";
     while($row = $result->fetch_assoc()){
-       echo "<br>$row[timestamp] $row[AmmoniaLevel] $row[WaterLevel] $row[Location]<br>";
+       echo "<tr><td>$row[timestamp]</td> <td>$row[AmmoniaLevel]</td> <td>$row[WaterLevel]</td> <td>$row[Location]</td></tr>";
     }
+    echo "</table>";
     
     //header('Content-Type:Application/json');
     //echo json_encode($array);
