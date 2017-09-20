@@ -1,4 +1,5 @@
 <?php
+echo "Hello";
 //Login details
 $servername = "mysql5.gear.host";
 $username = "sensordata";
