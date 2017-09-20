@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 
 
 echo "Connected successfully";
-if(isset($_GET['type'])){
+//if(isset($_GET['type'])){
     $date = $_GET['Date'];
     $nh3level = $_GET['ammonialevel'];
     $waterlevel = $_GET['waterlevel'];
@@ -25,5 +25,5 @@ if(isset($_GET['type'])){
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
-}
+//}
 ?>
