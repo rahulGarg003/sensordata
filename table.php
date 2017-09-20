@@ -17,7 +17,7 @@ $sql = "SELECT * FROM sensor";
     $array = [];
     
     while($row = $result->fetch_assoc()){
-       echo '$row[timestamp] $row[AmmoniaLevel] $row[WaterLevel] $row[Location]<br>';
+       echo "$row[timestamp] $row[AmmoniaLevel] $row[WaterLevel] $row[Location]<br>";
     }
     
     //header('Content-Type:Application/json');
