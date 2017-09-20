@@ -18,7 +18,7 @@ if(isset($_GET['type'])){
     $nh3level = $_GET['ammonialevel'];
     $waterlevel = $_GET['waterlevel'];
     $location = $_GET['location'];
-    echo '$date$nh3level   $waterlevel  $location';
+    echo "$date $nh3level   $waterlevel  $location";
     $sql = "INSERT INTO sensor (timestamp, AmmoniaLevel, WaterLevel  , Location) VALUES ($date, $nh3level  ,  $waterlevel  ,  $location)";
     if ($conn->query($sql) === TRUE) {
         echo "You have been registered successfully!";
