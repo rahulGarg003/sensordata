@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 //echo "Connected successfully";
-echo"Yes";
+//echo"Yes";
 echo "<title>.::Smart Sewage System::.</title>";
 //echo "<style type = "text/css">body{margin:0;background-color("green");background-size:cover}</style>";
 $sql = "SELECT * FROM sensorst";
