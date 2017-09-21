@@ -12,6 +12,9 @@ if ($conn->connect_error) {
 } 
 //echo "Connected successfully";
 echo"Yes";
+echo "<title>
+.::Smart Sewage System::.
+</title>"
 $sql = "SELECT * FROM sensor";
     $result = mysqli_query($conn ,$sql);
     $array = [];
